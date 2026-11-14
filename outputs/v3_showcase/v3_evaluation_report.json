@@ -1,0 +1,239 @@
+{
+  "stage_progression": {
+    "Phase1_Pretrain": {
+      "mean_metrics": {
+        "r_total": 1.7829,
+        "r_syntax": 1.0,
+        "r_no_stutter": 0.501,
+        "r_arp_fluidity": 0.8513,
+        "r_chord_color": 0.9992,
+        "r_counterpoint": 0.8092,
+        "r_hook_motif": 0.676,
+        "r_dynamic_arc": 0.8822
+      },
+      "best_of_n_metrics": {
+        "r_total": 1.8043,
+        "r_syntax": 1.0,
+        "r_no_stutter": 0.5361,
+        "r_arp_fluidity": 0.8528,
+        "r_chord_color": 0.999,
+        "r_counterpoint": 0.8599,
+        "r_hook_motif": 0.6767,
+        "r_dynamic_arc": 0.9442
+      }
+    },
+    "Phase2_Golden_CoT_SFT": {
+      "mean_metrics": {
+        "r_total": 1.8292,
+        "r_syntax": 1.0,
+        "r_no_stutter": 0.6754,
+        "r_arp_fluidity": 0.8972,
+        "r_chord_color": 0.9802,
+        "r_counterpoint": 0.8158,
+        "r_hook_motif": 0.6669,
+        "r_dynamic_arc": 0.9123
+      },
+      "best_of_n_metrics": {
+        "r_total": 1.8636,
+        "r_syntax": 1.0,
+        "r_no_stutter": 0.7189,
+        "r_arp_fluidity": 0.9101,
+        "r_chord_color": 0.9824,
+        "r_counterpoint": 0.8404,
+        "r_hook_motif": 0.7992,
+        "r_dynamic_arc": 0.938
+      }
+    },
+    "Phase3_Dr_GRPO_RLVR": {
+      "mean_metrics": {
+        "r_total": 1.859,
+        "r_syntax": 1.0,
+        "r_no_stutter": 0.7859,
+        "r_arp_fluidity": 0.9112,
+        "r_chord_color": 0.984,
+        "r_counterpoint": 0.8614,
+        "r_hook_motif": 0.6156,
+        "r_dynamic_arc": 0.9293
+      },
+      "best_of_n_metrics": {
+        "r_total": 1.893,
+        "r_syntax": 1.0,
+        "r_no_stutter": 0.8357,
+        "r_arp_fluidity": 0.9203,
+        "r_chord_color": 0.9782,
+        "r_counterpoint": 0.8876,
+        "r_hook_motif": 0.7413,
+        "r_dynamic_arc": 0.9669
+      }
+    },
+    "Phase4_SimPO_DPO_OPD": {
+      "mean_metrics": {
+        "r_total": 1.8667,
+        "r_syntax": 1.0,
+        "r_no_stutter": 0.7705,
+        "r_arp_fluidity": 0.9297,
+        "r_chord_color": 0.9979,
+        "r_counterpoint": 0.8551,
+        "r_hook_motif": 0.6554,
+        "r_dynamic_arc": 0.9339
+      },
+      "best_of_n_metrics": {
+        "r_total": 1.8937,
+        "r_syntax": 1.0,
+        "r_no_stutter": 0.8789,
+        "r_arp_fluidity": 0.9262,
+        "r_chord_color": 1.0,
+        "r_counterpoint": 0.8264,
+        "r_hook_motif": 0.7167,
+        "r_dynamic_arc": 0.9342
+      }
+    }
+  },
+  "showcase_tracks": [
+    {
+      "slug": "01_ballad_intro_qingtian_warmth",
+      "title": "《晴空前的温柔》 (Slow Ballad Golden Intro & Theme)",
+      "style": "[Style:Ballad_Slow]",
+      "mood": "[Mood:Nostalgic_Warm]",
+      "tempo_bpm": 72.0,
+      "key": "[Key:C_maj]",
+      "bars": 16,
+      "duration_sec": 56.55,
+      "verifier_metrics": {
+        "r_total": 1.8901,
+        "r_syntax": 1.0,
+        "r_no_stutter": 0.8117,
+        "r_arp_fluidity": 0.9446,
+        "r_chord_color": 1.0,
+        "r_counterpoint": 0.8934,
+        "r_hook_motif": 0.7604,
+        "r_dynamic_arc": 0.8626
+      },
+      "track_note_counts": {
+        "lead_hook": 82,
+        "piano_arp": 118,
+        "strings_pad": 38,
+        "bass": 20,
+        "drums": 12
+      },
+      "midi_path": "outputs/v3_showcase/01_ballad_intro_qingtian_warmth.mid",
+      "wav_path": "outputs/v3_showcase/01_ballad_intro_qingtian_warmth.wav"
+    },
+    {
+      "slug": "02_guofeng_intro_porcelain_mist",
+      "title": "《烟雨青瓷》 (Guofeng Pentatonic Lyrical Intro & Theme)",
+      "style": "[Style:Guofeng_Lyrical]",
+      "mood": "[Mood:Poetic_Breeze]",
+      "tempo_bpm": 76.0,
+      "key": "[Key:C_maj]",
+      "bars": 16,
+      "duration_sec": 53.52,
+      "verifier_metrics": {
+        "r_total": 1.9094,
+        "r_syntax": 1.0,
+        "r_no_stutter": 0.9254,
+        "r_arp_fluidity": 0.9795,
+        "r_chord_color": 1.0,
+        "r_counterpoint": 0.8498,
+        "r_hook_motif": 0.675,
+        "r_dynamic_arc": 0.899
+      },
+      "track_note_counts": {
+        "lead_hook": 98,
+        "piano_arp": 108,
+        "strings_pad": 34,
+        "bass": 20,
+        "drums": 12
+      },
+      "midi_path": "outputs/v3_showcase/02_guofeng_intro_porcelain_mist.mid",
+      "wav_path": "outputs/v3_showcase/02_guofeng_intro_porcelain_mist.wav"
+    },
+    {
+      "slug": "03_urban_romantic_mercury_glow",
+      "title": "《水星微光》 (Urban Romantic R&B Intro & Theme)",
+      "style": "[Style:Urban_Romantic]",
+      "mood": "[Mood:Nostalgic_Warm]",
+      "tempo_bpm": 84.0,
+      "key": "[Key:F_maj]",
+      "bars": 16,
+      "duration_sec": 48.51,
+      "verifier_metrics": {
+        "r_total": 1.9212,
+        "r_syntax": 1.0,
+        "r_no_stutter": 0.9292,
+        "r_arp_fluidity": 0.9406,
+        "r_chord_color": 1.0,
+        "r_counterpoint": 0.9086,
+        "r_hook_motif": 0.6783,
+        "r_dynamic_arc": 1.0
+      },
+      "track_note_counts": {
+        "lead_hook": 97,
+        "piano_arp": 125,
+        "strings_pad": 33,
+        "bass": 20,
+        "drums": 12
+      },
+      "midi_path": "outputs/v3_showcase/03_urban_romantic_mercury_glow.mid",
+      "wav_path": "outputs/v3_showcase/03_urban_romantic_mercury_glow.wav"
+    },
+    {
+      "slug": "04_poprock_driving_wind_rises",
+      "title": "《破晓疾风》 (Pop-Rock Driving Intro & Theme)",
+      "style": "[Style:PopRock_Driving]",
+      "mood": "[Mood:Dramatic_Swell]",
+      "tempo_bpm": 96.0,
+      "key": "[Key:G_maj]",
+      "bars": 16,
+      "duration_sec": 42.8,
+      "verifier_metrics": {
+        "r_total": 1.9187,
+        "r_syntax": 1.0,
+        "r_no_stutter": 0.8459,
+        "r_arp_fluidity": 0.9491,
+        "r_chord_color": 1.0,
+        "r_counterpoint": 0.8091,
+        "r_hook_motif": 0.9125,
+        "r_dynamic_arc": 1.0
+      },
+      "track_note_counts": {
+        "lead_hook": 68,
+        "piano_arp": 106,
+        "strings_pad": 31,
+        "bass": 20,
+        "drums": 12
+      },
+      "midi_path": "outputs/v3_showcase/04_poprock_driving_wind_rises.mid",
+      "wav_path": "outputs/v3_showcase/04_poprock_driving_wind_rises.wav"
+    },
+    {
+      "slug": "05_melancholic_cello_piano_dialogue",
+      "title": "《星河回响》 (Melancholic Cello-Piano Dialogue)",
+      "style": "[Style:Ballad_Slow]",
+      "mood": "[Mood:Melancholic_Tearful]",
+      "tempo_bpm": 68.0,
+      "key": "[Key:A_min]",
+      "bars": 16,
+      "duration_sec": 59.27,
+      "verifier_metrics": {
+        "r_total": 1.8843,
+        "r_syntax": 1.0,
+        "r_no_stutter": 0.7895,
+        "r_arp_fluidity": 0.9453,
+        "r_chord_color": 1.0,
+        "r_counterpoint": 0.8552,
+        "r_hook_motif": 0.6817,
+        "r_dynamic_arc": 1.0
+      },
+      "track_note_counts": {
+        "lead_hook": 93,
+        "piano_arp": 116,
+        "strings_pad": 35,
+        "bass": 20,
+        "drums": 12
+      },
+      "midi_path": "outputs/v3_showcase/05_melancholic_cello_piano_dialogue.mid",
+      "wav_path": "outputs/v3_showcase/05_melancholic_cello_piano_dialogue.wav"
+    }
+  ]
+}

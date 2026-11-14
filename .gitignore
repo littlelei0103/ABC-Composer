@@ -1,0 +1,47 @@
+# Virtual environments & Python caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# Model checkpoints & large serialized tensors (exceeds GitHub 100 MB limit)
+/checkpoints/
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.ckpt
+
+# Raw & processed training datasets
+/data/
+*.zip
+*.tar.gz
+*.tgz
+
+# Large SoundFonts (keep lightweight TimGM6mb.sf2 fallback only)
+/eval/soundfonts/*.sf2
+!/eval/soundfonts/TimGM6mb.sf2
+
+# Rendered studio audio & runtime outputs (keep lightweight showcase MIDIs & reports)
+*.wav
+*.mp3
+*.flac
+*.ogg
+/outputs/v3_all_onsets/
+/outputs/v3_showcase/custom/
+/outputs/v3_showcase/_library_meta.json
+
+# OS & IDE files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
